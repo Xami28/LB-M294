@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LB-Pokedex</title>
+    <link rel="stylesheet" href="pokedex.css" />
+  </head>
+  <body>
+    <Header>Pokedex</Header>
+    <div id="login-container" class="login-container">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required />
+
+        <button type="button" onclick="loginAndShowApp()">Login</button>
+      </form>
+      <p id="wrongPasswordLabel">Wrong username or password</p>
+    </div>
+
+    <div id="content-container" class="content-container" style="display: none">
+      <a href="Pokedex.html"><img src="Pokédex_logo.png" class="center" /></a>
+      <div id="poke-container" class="poke-container"></div>
+      <button id="add-pokemon-button">Add Pokemon</button>
+      <div id="add-pokemon-modal" class="modal">
+        <form id="add-pokemon-form">
+          <label for="pokemon-name">Name:</label>
+          <input type="text" id="pokemon-name" required />
+
+          <label for="pokemon-type">Type:</label>
+          <input type="text" id="pokemon-type" required />
+
+          <button type="submit">Add Pokemon</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+    <script src="pokedex.js"></script>
+    <footer>Samuel Lucena LB 294 2023</footer>
+  </body>
+</html>
